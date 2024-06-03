@@ -9,8 +9,9 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import Image from "next/image";
+import Link from "next/link"; 
 
 export const HeroParallax = ({
   products,
@@ -142,7 +143,7 @@ export const ProductCard = ({
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
       <Link
-        to = {product.link}
+        href = {product.link}
         className="block group-hover/product:shadow-2xl "
       >
         <img

@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
-import { BrowserRouter as Router } from 'react-router-dom';
 export function HeroParallaxDemo() {
   return(
     <div>
-      <Router>
+      
       <HeroParallax products={products} />
-      </Router>
+      
 
     </div> 
   );
